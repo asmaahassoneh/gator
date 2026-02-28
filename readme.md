@@ -1,4 +1,4 @@
-# Gator – RSS Feed Aggregator CLI
+# gator
 
 Gator is a multi-user CLI RSS feed aggregator built with:
 
@@ -159,4 +159,5 @@ Specify limit:
 npm run start browse 10
 
 Posts are ordered newest first.
+
 
