@@ -35,26 +35,29 @@ Clone the repository:
 ```bash
 git clone https://github.com/asmaahassoneh/gator 
 cd gator
+```
 
 ## 2️⃣ Install Dependencies
 
 ```bash
 npm install
-
+```
 
 # 🗄️ Database Setup
 ## 1️⃣ Create database
 ```bash
 psql postgres
+```
 
 ```psql:
 CREATE DATABASE gator;
 \q
+```
 
 ## 2️⃣ Set postgres password (Linux)
 ```bash
 sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
-
+```
 
 #⚙️ Config File Setup
 
@@ -77,7 +80,7 @@ Example (macOS):
 ```bash
 npx drizzle-kit generate
 npx drizzle-kit migrate
-
+```
 This creates all required tables:
 users
 feeds
@@ -90,47 +93,47 @@ npm run start <command>
 Example:
 ```bash
 npm run start register lane
-
+```
 
 #📚 Available Commands
 👤 User Commands
 ```bash
 npm run start register <username>
-
+```
 
 ```bash
 npm run start login <username>
-
+```
 ```bash
 npm run start users
-
+```
 
 #📡 Feed Commands
 Add Feed
 
 ```bash
 npm run start addfeed "Feed Name" "<feed_url>"
-
+```
 
 Follow Feed
 ```bash
 npm run start follow "<feed_url>"
-
+```
 
 Unfollow Feed
 ```bash
 npm run start unfollow "<feed_url>"
-
+```
 
 List Feeds
 ```bash
 npm run start feeds
-
+```
 
 See What You're Following
 ```bash
 npm run start following
-
+```
 
 #📰 Aggregation
 Run Aggregator (long running)
@@ -156,3 +159,4 @@ Specify limit:
 npm run start browse 10
 
 Posts are ordered newest first.
+
